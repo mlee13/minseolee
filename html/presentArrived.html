@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/presentArrived.css">
+    
+    <div class="header-content">
+        <button id= "nameButton" class="btn-primary" type="button" onclick="onNameSubmission()">Lets Go!</button>
+        <button id= "nameButton" class="btn-secondary" type="button" onclick="onNameSubmission()">Lets Go!</button>
+    </div>
+    
+    <img src="/img/give-present.png" id="i1" width="200" height="200">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="button" onClick="timer()" value='Start'>
+    <!-- <input type="button" onClick=reset1() value='Reset'> -->
+    <!-- <div id="debugMsg"></div> -->
+
+    <script type="text/javascript">
+            function disp() {
+                var step = 2;
+
+                var y = document.getElementById('i1').offsetTop;
+                var x = document.getElementById('i1').offsetLeft;
+                // document.getElementById("debugMsg").innerHTML="X: " + x  + " Y : " + y
+
+                if (x > 200) {
+                    x = x - step;
+                    document.getElementById('i1').style.left = x + "px";
+                }
+            }
+
+            function timer() {
+                disp();
+                my_time=setTimeout('timer()',10);
+            }
+    </script>
+</head>
+<body background="/img/red-white.jpg">
+    
+</body>
+</html>

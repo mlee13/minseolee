@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .floatRight{
+    float:right;margin-left:20px
+} */
+
+/* #msg {
+    background: black;
+} */
+
+#i1 {
+    position:absolute; 
+    left: 88%; 
+    top: 30%;
+}
+
+.header-content {
+    display: flex;
+    background: #FAF8F4;
+    /* background-image: url("/img/red-white.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+    min-height: 30vh;
+    min-width: 50vh;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.btns {
+    margin-top: 30px;
+}
+.btn-primary {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #525252, #101010);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-right: 20px;
+}
+.btn-secondary {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #101010;
+    background: transparent;
+}
